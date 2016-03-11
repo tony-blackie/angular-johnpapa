@@ -5,13 +5,14 @@
 		.module('app.users')
 		.controller('GreenSquareController', GreenSquareController);
 
-	GreenSquareController.$inject = ['$state'];
+	GreenSquareController.$inject = ['$state'];\
 
 	function GreenSquareController($state) {
 
 		var vm = this;
 
 		angular.extend(vm, {
+
 			goToRed: goToRed
 		});
 
