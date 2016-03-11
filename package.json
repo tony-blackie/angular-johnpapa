@@ -1,0 +1,29 @@
+{
+  "name": "angular-express",
+  "version": "1.0.0",
+  "description": "A Gulp file and project generator.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "tony-blackie",
+  "license": "MIT",
+  "devDependencies": {
+    "angular": "^1.5.0",
+    "angular-ui-router": "^0.2.18",
+    "express": "^4.13.4",
+    "gulp": "3.9.0",
+    "gulp-babel": "5.1.0",
+    "gulp-concat": "2.5.2",
+    "gulp-plumber": "1.0.0",
+    "gulp-rename": "1.2.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "jasmine": "^2.4.1",
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.21",
+    "karma-jasmine": "^0.3.7",
+    "karma-phantomjs-launcher": "^1.0.0",
+    "phantomjs": "^2.1.3",
+    "phantomjs-prebuilt": "^2.1.4"
+  }
+}
