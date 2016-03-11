@@ -14,6 +14,29 @@
 
 	angular
 		.module('app.users')
+		.controller('GreenSquareController', GreenSquareController);
+
+	GreenSquareController.$inject = ['$state'];
+
+	function GreenSquareController($state) {
+
+		var vm = this;
+
+		angular.extend(vm, {
+			goToRed: goToRed
+		});
+
+		function goToRed() {
+			$state.go('nextState');
+		}
+	}
+})();
+
+(function() {
+	"use strict";
+
+	angular
+		.module('app.users')
 		.controller('UserListController', UserListController);
 
 	function UserListController() {
@@ -56,6 +79,11 @@
                 url: '/next-state',
                 templateUrl: './views/blueSquare.html',
                 controller: 'UserListController as userListCtrl'
+            })
+            .state('greenState', {
+                url: '/green-state',
+                templateUrl: './views/greenSquare.html',
+                controller: 'GreenSquareController as greenSquareCtrl'
             });
     }
 })();

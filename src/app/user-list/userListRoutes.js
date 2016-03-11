@@ -20,6 +20,11 @@
                 url: '/next-state',
                 templateUrl: './views/blueSquare.html',
                 controller: 'UserListController as userListCtrl'
+            })
+            .state('greenState', {
+                url: '/green-state',
+                templateUrl: './views/greenSquare.html',
+                controller: 'GreenSquareController as greenSquareCtrl'
             });
     }
 })();
